@@ -1,7 +1,3 @@
-.header {
-    padding: 0 20px;
-}
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -38,7 +34,7 @@
 
 .titleWrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
     gap: 30px;
