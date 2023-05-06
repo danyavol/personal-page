@@ -1,0 +1,76 @@
+.header {
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+
+    > a {
+        transition: color 0.2s ease;
+        color: var(--md-sys-color-secondary);
+        font-weight: 500;
+        padding: 5px 5px 0 5px;
+    }
+
+    > a:hover {
+        color: var(--md-sys-color-primary);
+
+        &::after {
+            width: 20px;
+        }
+    }
+
+    > a::after {
+        display: block;
+        content: "";
+        width: 0;
+        transition: width 0.2s ease;
+        height: 2px;
+        background-color: var(--md-sys-color-primary);
+        border-radius: 1px;
+        margin: 3px auto 0 auto;
+    }
+    
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 200;
+    strong {
+        font-weight: 400;
+    }
+}
+
+.titleDescription {
+    font-size: 13px;
+    margin-top: 15px;
+    width: 400px;
+    color: var(--md-sys-color-on-surface-variant-light);
+}
+
+.photoWrapper {
+    background: url("/images/photo-decoration.svg");
+    width: 450px;
+    height: 450px;
+    background-repeat: round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
