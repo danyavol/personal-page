@@ -1,6 +1,6 @@
 import ProjectCard from "./project-card";
 
-export function Projects() {
+export default function Projects() {
     return (
         <section id="projects" style={{height: "800px"}}>
             <img src="/images/curve-line.svg" className="section-separator" />

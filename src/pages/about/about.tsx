@@ -1,4 +1,4 @@
-export function About() {
+export default function About() {
     return (
         <section id="about" style={{height: "800px"}}>
             About

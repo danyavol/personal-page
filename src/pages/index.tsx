@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from './header/header'
-import { About } from './about/about'
-import { Projects } from './projects/projects'
-import { Contact } from './contact/contact'
+import About from './about/about'
+import Projects from './projects/projects'
+import Contact from './contact/contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
