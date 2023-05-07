@@ -19,7 +19,7 @@ export default function Home() {
       <main className={inter.className}>
             <Header />
 
-            <h3 style={{color: "red", textAlign: "center"}}>In Progress... Will be available soon</h3>
+            <h3 style={{color: "red", textAlign: "center"}}>Site is in progress... Will be available soon</h3>
             {/* <About /> */}
             <Projects />
             {/* <Contact /> */}
