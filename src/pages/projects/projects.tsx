@@ -1,5 +1,5 @@
 import { projects } from "@/constants/projects";
-import ProjectCard from "./project-card/project-card";
+import ProjectCard from "../../components/project-card/project-card";
 import styles from "./projects.module.scss";
 
 export default function Projects() {
