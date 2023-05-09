@@ -10,23 +10,23 @@ export const projects: {[category: string]: Project[]} = {
     top: [
         { 
             title: 'Bot "Study Buddy"',
-            description: "Web application which helps to do this and that stuff. Very useful, I recommend to click here and view all the details",
+            description: "Telegram bot whose mission was to make life easier for students. More than 1800 people have used it.",
             tags: ["Telegram Bot", "JavaScript", "Node.js", "MongoDB", "HTML Parsing", "Heroku"],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/study-buddy-bot/preview.png",
             images: []
         },
         { 
             title: 'Web App "Study Buddy"',
-            description: "",
-            tags: ["Angular 12", "Angular Material", "ApexCharts", "Node.js", "Express", "TypeScript", "JWT", "MongoDB", "Netlify", "Heroku"],
-            previewImg: "/images/project-placeholder.svg",
+            description: 'Web version of the "Study Buddy" bot. Also it has admin page to control the application and view statistics.',
+            tags: ["Angular 12", "Angular Material", "ApexCharts", "Node.js", "TypeScript", "Express", "JWT", "MongoDB", "Netlify", "Heroku"],
+            previewImg: "/images/projects/study-buddy-web/preview.png",
             images: []
         },
         { 
             title: "Money Splitter",
-            description: "",
+            description: "Mobile app which helps to split expenses between group of people. Published to Google Play.",
             tags: ["Angular 15", "Angular Material", "Ionic", "Capacitor", "IOS/Android app", "Google Play"],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/money-splitter/preview.png",
             images: []
         },
     ],
