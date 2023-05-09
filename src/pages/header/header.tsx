@@ -12,7 +12,7 @@ export default function Header() {
         <div className={styles.titleWrapper}>
             <div>
                 <h1 className={styles.title}>Hey! <strong>I'm Daniil</strong>, a<br/><strong>Software Engineer</strong></h1>
-                <p className={styles.titleDescription}>I've been developing web and mobile apps for over 3 years. I'm into active sports, snowboarding, woodworking and traveling.</p>
+                <p className={styles.titleDescription}>I've been developing apps since 2019. I'm into active sports, snowboarding, woodworking and traveling.</p>
             </div>
             <div className={styles.photoWrapper}>
                 <img src="/images/my-photo.jpg" alt="Photo of me" className={styles.photo} />

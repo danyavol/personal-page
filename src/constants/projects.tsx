@@ -1,9 +1,16 @@
 export interface Project {
     title: string;
-    description: any;
+    description: string;
+    links?: Link[];
     tags: string[];
     previewImg: string;
     images: string[];
+}
+
+export interface Link {
+    url: string;
+    label: string;
+    icon?: string;
 }
 
 export const projects: {[category: string]: Project[]} = {
@@ -11,65 +18,94 @@ export const projects: {[category: string]: Project[]} = {
         { 
             title: 'Bot "Study Buddy"',
             description: "Telegram bot whose mission was to make life easier for students. More than 1800 people have used it.",
-            tags: ["Telegram Bot", "JavaScript", "Node.js", "MongoDB", "HTML Parsing", "Heroku"],
+            tags: ["JavaScript", "Node.js", "telegraf", "MongoDB", "HTML Parsing", "Heroku"],
+            links: [
+                { url: "https://t.me/mitsoStudentBot", label: "Telegram Bot" },
+            ],
             previewImg: "/images/projects/study-buddy-bot/preview.png",
             images: []
         },
         { 
             title: 'Web App "Study Buddy"',
             description: 'Web version of the "Study Buddy" bot. Also it has admin page to control the application and view statistics.',
-            tags: ["Angular 12", "Angular Material", "ApexCharts", "Node.js", "TypeScript", "Express", "JWT", "MongoDB", "Netlify", "Heroku"],
+            tags: ["Angular 12", "Angular Material", "ApexCharts", "Node.js", "TypeScript", "Express", "JWT", "MongoDB", "Netlify", "Heroku", "Responsive Design"],
+            links: [
+                { url: "https://github.com/danyavol/mitso-schedule-web", label: "Source Code" },
+                { url: "https://mitso.netlify.app", label: "App" },
+            ],
             previewImg: "/images/projects/study-buddy-web/preview.png",
             images: []
         },
         { 
             title: "Money Splitter",
             description: "Mobile app which helps to split expenses between group of people. Published to Google Play.",
-            tags: ["Angular 15", "Angular Material", "Ionic", "Capacitor", "IOS/Android app", "Google Play"],
+            tags: ["Angular 15", "Angular Material", "Ionic", "Capacitor", "IOS/Android app", "Google Play Console"],
+            links: [
+                { url: "https://github.com/danyavol/money-splitter", label: "Source Code" },
+                { url: "https://play.google.com/store/apps/details?id=danyavol.moneysplitter", label: "Google Play" },
+            ],
             previewImg: "/images/projects/money-splitter/preview.png",
             images: []
         },
     ],
     webApps: [
         { 
-            title: "Cozy Groups",
-            description: "",
-            tags: ["React", "Semantic UI", "ApexCharts", "MongoDB", "Netlify", "Heroku"],
-            previewImg: "/images/project-placeholder.svg",
-            images: []
-        },
-        { 
-            title: 'Web Chat "Жывеграм"',
-            description: "",
-            tags: ["React", "Semantic UI", "ApexCharts", "MongoDB", "Netlify", "Heroku"],
-            previewImg: "/images/project-placeholder.svg",
-            images: []
-        },
-        { 
             title: "Equipment Service System",
-            description: "",
-            tags: [],
+            description: "A complete application for creating and managing equipment repair requests.",
+            tags: ["Angular 14", "Taiga UI", "Node.js", "Express", "Typescript", "JWT", "PostgreSQL", "Docker"],
+            links: [
+                { url: "https://github.com/danyavol/equipment-service-system", label: "Source Code" },
+            ],
+            previewImg: "/images/project-placeholder.svg",
+            images: []
+        },
+        { 
+            title: 'Web Messenger "Жывеграм"',
+            description: "A complete web-messenger with many features. Unfortunately without WebSockets :(",
+            tags: ["Vue.js", "Bootstrap", "Java", "Spring Boot", "MongoDB", "Color Themes"],
+            links: [
+                { url: "https://github.com/danyavol/web-chat-server", label: "Source Code" },
+            ],
+            previewImg: "/images/project-placeholder.svg",
+            images: []
+        },
+        { 
+            title: "Cozy Groups",
+            description: "Clone of the Google Classroom. 3 people developed this app. I was the Lead and wrote the Backend part.",
+            tags: ["React", "Semantic UI", "ApexCharts", "Node.js", "Express", "MongoDB", "Netlify", "Heroku"],
+            links: [
+                { url: "https://github.com/danyavol/cozy-groups", label: "Source Code" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
             title: "Job Search App",
-            description: "",
-            tags: [],
+            description: "App for generating a CV in PDF format and job search in Belarus.",
+            tags: ["Vue.js", "Bulma (CSS Framework)", "Node.js", "Express", "HTML Parsing", "HTML to PDF"],
+            links: [
+                { url: "https://github.com/danyavol/job-search-app", label: "Source Code" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
-            title: "Restaurant",
-            description: "",
-            tags: [],
+            title: "Restaurant App",
+            description: "App for booking and managing table seats in the restaurant.",
+            tags: ["Vue.js", "Bootstrap", "Node.js", "Express", "MongoDB"],
+            links: [
+                { url: "https://github.com/danyavol/restaurant-app", label: "Source Code" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
-            title: "React Pizza",
-            description: "",
-            tags: [],
+            title: "Pizza App",
+            description: "Standard pizza site with basket and authorization. Without Backend part.",
+            tags: ["React", "Bootstrap", "Webpack"],
+            links: [
+                { url: "https://github.com/danyavol/react-pizza", label: "Source Code" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
@@ -77,29 +113,44 @@ export const projects: {[category: string]: Project[]} = {
     webGames: [
         { 
             title: "2D Platformer",
-            description: "",
-            tags: [],
+            description: "My own engine to run 2D games in browser. Automatic camera follow, physics, collision, animations, map config, etc.",
+            tags: ["TypeScript", "webpack", "No libraries"],
+            links: [
+                { url: "https://github.com/danyavol/2d-platformer", label: "Source Code" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
             title: "Tetris",
-            description: "",
-            tags: [],
+            description: "Tetris game with classic rules. But it's me falling inside the blocks :D",
+            tags: ["Vanilla JavaScript", "OOP", "Responsive Design"],
+            links: [
+                { url: "https://github.com/danyavol/tetris", label: "Source Code" },
+                { url: "https://tetris.danyavol.dev", label: "Play it!" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
             title: "Sea Battle",
-            description: "",
-            tags: [],
+            description: "Sea battle game. You can play against the other player or computer. There are games statistics.",
+            tags: ["Vanilla JavaScript", "Responsive Design"],
+            links: [
+                { url: "https://github.com/danyavol/sea-battle", label: "Source Code" },
+                { url: "https://sea-battle.danyavol.dev", label: "Play it!" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
             title: "Ping-Pong",
-            description: "",
-            tags: [],
+            description: "Simple ping-pong game. The purpose of creating the game was to learn how to use Canvas API.",
+            tags: ["Vanilla JavaScript", "Canvas API", "Responsive Design"],
+            links: [
+                { url: "https://github.com/danyavol/ping-pong", label: "Source Code" },
+                { url: "https://ping-pong.danyavol.dev", label: "Play it!" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
@@ -107,15 +158,22 @@ export const projects: {[category: string]: Project[]} = {
     other: [
         { 
             title: "Car Tracker",
-            description: "",
-            tags: [],
+            description: "Telegram bot which helps to track changes at car market and catch the best and the cheapest offer. Architected with possibility to add new markets(car selling websites).",
+            tags: ["Node.js", "Typescript", "telegraf", "RxJs", "HTML Parsing", "Firebase"],
+            links: [
+                { url: "https://github.com/danyavol/car-tracker", label: "Source Code" },
+                { url: "https://t.me/carsTrackerBot", label: "Telegram Bot" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
         { 
             title: "Salary Calculator",
-            description: "",
-            tags: [],
+            description: "CLI app - Gross/NET salary converter. Written using Dart language.",
+            tags: ["Dart"],
+            links: [
+                { url: "https://github.com/danyavol/salary_calculator", label: "Source Code" },
+            ],
             previewImg: "/images/project-placeholder.svg",
             images: []
         },
