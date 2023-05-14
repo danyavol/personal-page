@@ -50,13 +50,13 @@ export const projects: {[category: string]: Project[]} = {
     ],
     webApps: [
         { 
-            title: "Equipment Service System",
+            title: "Equipment Service",
             description: "A complete application for creating and managing equipment repair requests.",
             tags: ["Angular 14", "Taiga UI", "Node.js", "Express", "Typescript", "JWT", "PostgreSQL", "Docker"],
             links: [
                 { url: "https://github.com/danyavol/equipment-service-system", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/equipment-service/preview.png",
             images: []
         },
         { 
@@ -66,7 +66,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/web-chat-server", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/web-chat/preview.png",
             images: []
         },
         { 
@@ -76,7 +76,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/cozy-groups", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/cozy-groups/preview.png",
             images: []
         },
         { 
@@ -86,7 +86,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/job-search-app", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/job-search-app/preview.png",
             images: []
         },
         { 
@@ -96,7 +96,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/restaurant-app", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/restaurant-app/preview.png",
             images: []
         },
         { 
@@ -106,7 +106,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/react-pizza", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/pizza-app/preview.png",
             images: []
         },
     ],
@@ -118,7 +118,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/2d-platformer", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/2d-platformer/preview.png",
             images: []
         },
         { 
@@ -129,7 +129,7 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/tetris", label: "Source Code" },
                 { url: "https://tetris.danyavol.dev", label: "Play it!" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/tetris/preview.png",
             images: []
         },
         { 
@@ -140,7 +140,7 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/sea-battle", label: "Source Code" },
                 { url: "https://sea-battle.danyavol.dev", label: "Play it!" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/sea-battle/preview.png",
             images: []
         },
         { 
@@ -151,7 +151,7 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/ping-pong", label: "Source Code" },
                 { url: "https://ping-pong.danyavol.dev", label: "Play it!" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/ping-pong/preview.png",
             images: []
         },
     ],
@@ -164,7 +164,7 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/car-tracker", label: "Source Code" },
                 { url: "https://t.me/carsTrackerBot", label: "Telegram Bot" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/car-tracker/preview.png",
             images: []
         },
         { 
@@ -174,7 +174,7 @@ export const projects: {[category: string]: Project[]} = {
             links: [
                 { url: "https://github.com/danyavol/salary_calculator", label: "Source Code" },
             ],
-            previewImg: "/images/project-placeholder.svg",
+            previewImg: "/images/projects/salary-calc/preview.png",
             images: []
         },
     ]
