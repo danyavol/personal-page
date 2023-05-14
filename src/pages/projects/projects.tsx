@@ -12,7 +12,7 @@ export default function Projects() {
             <h3 className={styles.subsection}>TOP Projects</h3>
             <div className={styles.projects}>
                 {
-                    projects.top.map((p, index) => <ProjectCard project={p} key={index} />)
+                    projects.top.map((p, index) => <ProjectCard project={p} key={index} top={true} />)
                 }
             </div>
 

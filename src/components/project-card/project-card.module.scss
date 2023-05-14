@@ -37,6 +37,26 @@
             font-size: 13px;
         }
     }
+
+    &.top {
+        position: relative;
+        background-color: var(--md-sys-color-primary-container);
+
+        .tag {
+            background-color: var(--md-sys-color-primary);
+            color: white;
+        }
+
+        &::after {
+            content: '';
+            background: url('/images/icons/star.svg');
+            position: absolute;
+            right: 8px;
+            top: 0;
+            height: 60px;
+            width: 60px;
+        }
+    }
 }
 
 .links {

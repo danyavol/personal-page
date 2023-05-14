@@ -2,10 +2,10 @@ import { Project } from "@/constants/projects";
 import styles from "./project-card.module.scss";
 import LinkIcon from "../../../public/images/icons/link.svg";
 
-export default function ProjectCard(params: { project: Project }) {
+export default function ProjectCard(params: { project: Project, top?: boolean }) {
     const { title, description, tags, images, previewImg, links } = params.project;
     return (
-        <div className={styles.card} tabIndex={0}>
+        <div className={`${styles.card} ${params.top ? styles.top : ""}`} tabIndex={0}>
             <div className={styles.cardPreview}>
                 <img src={previewImg} />
             </div>
