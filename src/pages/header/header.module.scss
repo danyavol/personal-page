@@ -36,8 +36,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap-reverse;
     gap: 30px;
+
+    @media (max-width: 950px) {
+        & {
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+    }
 }
 
 .title {
@@ -46,28 +52,35 @@
     strong {
         font-weight: 400;
     }
+
+    @media (max-width: 950px) {
+        & {
+            font-size: 35px;
+            text-align: center;
+        }
+    }
 }
 
 .titleDescription {
     font-size: 15px;
     text-align: justify;
     margin-top: 15px;
-    width: 390px;
+    max-width: 390px;
     color: var(--md-sys-color-on-surface-variant-light);
 }
 
 .photoWrapper {
     background-image: url("/images/photo-decoration.svg");
-    width: 450px;
-    height: 450px;
+    max-width: 450px;
     background-repeat: round;
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 1/1;
 }
 
 .photo {
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 77%;
+    height: 77%;
 }

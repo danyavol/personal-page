@@ -26,6 +26,12 @@ main {
     max-width: 1280px;
     padding: 0 32px;
     margin: auto;
+
+    @media (max-width: 900px) {
+        & {
+            padding: 0 16px;
+        }
+    }
 }
 
 .page-background {
