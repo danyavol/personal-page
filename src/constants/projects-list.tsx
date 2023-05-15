@@ -90,16 +90,6 @@ export const projects: {[category: string]: Project[]} = {
             images: []
         },
         { 
-            title: "Restaurant App",
-            description: "App for booking and managing table seats in the restaurant.",
-            tags: ["Vue.js", "Bootstrap", "Node.js", "Express", "MongoDB"],
-            links: [
-                { url: "https://github.com/danyavol/restaurant-app", label: "Source Code" },
-            ],
-            previewImg: "/images/projects/restaurant-app/preview.png",
-            images: []
-        },
-        { 
             title: "Pizza App",
             description: "Standard pizza site with basket and authorization. Without Backend part.",
             tags: ["React", "Bootstrap", "Webpack"],
