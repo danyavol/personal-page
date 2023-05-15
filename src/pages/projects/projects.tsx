@@ -1,4 +1,4 @@
-import { projects } from "@/constants/projects";
+import { projects } from "@/constants/projects-list";
 import ProjectCard from "../../components/project-card/project-card";
 import styles from "./projects.module.scss";
 

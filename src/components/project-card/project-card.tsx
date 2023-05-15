@@ -1,4 +1,4 @@
-import { Project } from "@/constants/projects";
+import { Project } from "@/constants/projects-list";
 import styles from "./project-card.module.scss";
 import LinkIcon from "../../../public/images/icons/link.svg";
 

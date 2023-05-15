@@ -114,7 +114,7 @@ export const projects: {[category: string]: Project[]} = {
         { 
             title: "2D Platformer",
             description: "My own engine to run 2D games in browser. Automatic camera follow, physics, collision, animations, map config, etc.",
-            tags: ["TypeScript", "webpack", "No libraries"],
+            tags: ["TypeScript", "webpack", "Canvas API", "No libraries"],
             links: [
                 { url: "https://github.com/danyavol/2d-platformer", label: "Source Code" },
             ],
