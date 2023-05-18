@@ -107,6 +107,7 @@ export const projects: {[category: string]: Project[]} = {
             tags: ["TypeScript", "webpack", "Canvas API", "No libraries"],
             links: [
                 { url: "https://github.com/danyavol/2d-platformer", label: "Source Code" },
+                { url: "https://2d-platformer.danyavol.dev", label: "Try it!" },
             ],
             previewImg: "/images/projects/2d-platformer/preview.png",
             images: []
