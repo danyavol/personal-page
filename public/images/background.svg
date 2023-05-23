@@ -1,5 +1,19 @@
-<svg width="386" height="645" viewBox="0 0 386 645" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 191.984V105.016C13.5256 86.231 35.5844 74 60.5 74C101.645 74 135 107.355 135 148.5C135 189.645 101.645 223 60.5 223C35.5844 223 13.5256 210.769 0 191.984Z" fill="#6A9FFF"/>
-<path d="M386 264.545V372.455C376.276 378.505 364.796 382 352.5 382C317.43 382 289 353.57 289 318.5C289 283.43 317.43 255 352.5 255C364.796 255 376.276 258.495 386 264.545Z" fill="#74BAFF"/>
-<circle cx="151.5" cy="544.5" r="91.5" fill="#438AE6"/>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="386" height="645" viewBox="0 0 386 645">
+    <defs>
+        <filter id="blurme">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+            <feComponentTransfer>
+                <feFuncA type="table" tableValues="0 0.2" />
+            </feComponentTransfer>
+        </filter>
+    </defs>
+    <g filter="url(#blurme)">
+        <path
+            d="M0 191.984V105.016C13.5256 86.231 35.5844 74 60.5 74C101.645 74 135 107.355 135 148.5C135 189.645 101.645 223 60.5 223C35.5844 223 13.5256 210.769 0 191.984Z"
+            fill="#6A9FFF" />
+        <path
+            d="M386 264.545V372.455C376.276 378.505 364.796 382 352.5 382C317.43 382 289 353.57 289 318.5C289 283.43 317.43 255 352.5 255C364.796 255 376.276 258.495 386 264.545Z"
+            fill="#74BAFF" />
+        <circle cx="151.5" cy="524.5" r="91.5" fill="#438AE6" />
+    </g>
 </svg>

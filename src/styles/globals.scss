@@ -48,7 +48,6 @@ main {
     height: 100%;
     top: 0;
     left: 0;
-    filter: blur(100px) opacity(0.2); // TODO: Think how can you replace this, its lagging in Firefox and Safari (SVG filter)
     background-repeat: repeat-y;
     background-size: 100%;
 }
