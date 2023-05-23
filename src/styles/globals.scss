@@ -1,5 +1,6 @@
 @import "./theme/theme.scss";
 @import "./sections.scss";
+@import "./image-gallery.scss";
 
 * {
     box-sizing: border-box;
@@ -32,6 +33,11 @@ main {
             padding: 0 16px;
         }
     }
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
 }
 
 .page-background {
