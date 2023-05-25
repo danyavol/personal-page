@@ -1,10 +1,12 @@
+import { ReactImageGalleryItem } from "react-image-gallery";
+
 export interface Project {
     title: string;
     description: string;
     links?: Link[];
     tags: string[];
     previewImg: string;
-    images: string[];
+    images: (string | ReactImageGalleryItem)[];
 }
 
 export interface Link {
@@ -23,7 +25,21 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://t.me/mitsoStudentBot", label: "Telegram Bot" },
             ],
             previewImg: "/images/projects/study-buddy-bot/preview.png",
-            images: []
+            images: [
+                '/images/projects/study-buddy-bot/preview.png',
+                {
+                    original: "",
+                    renderItem: () => {
+                        return (
+                            <video className="image-gallery-image" controls muted>
+                                <source src="/images/projects/study-buddy-bot/demo.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        );
+                    }
+                },
+                '/images/projects/study-buddy-bot/screenshot1.png',
+            ]
         },
         { 
             title: 'Web App "Study Buddy"',

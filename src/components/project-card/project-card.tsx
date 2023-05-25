@@ -1,7 +1,7 @@
 import { Project } from "@/constants/projects-list";
 import styles from "./project-card.module.scss";
 import LinkIcon from "../../../public/images/icons/link.svg";
-import ImageGallery, { ReactImageGalleryItem } from 'react-image-gallery';
+import ImageGallery from 'react-image-gallery';
 import { useRef, useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 import { createPortal } from 'react-dom';
@@ -9,25 +9,17 @@ import { MouseEventHandler } from "react";
 
 export default function ProjectCard(params: { project: Project, top?: boolean }) {
     const imageGalleryRef = useRef<ReactImageGallery>(null);
+    const imageGalleryWrapperRef = useRef<HTMLDivElement>(null);
     const [isFullScreen, setIsFullscreen] = useState(false);
 
     const { title, description, tags, images, previewImg, links } = params.project;
 
-    const images2: ReactImageGalleryItem[] = [
-        {
-          original: '/images/projects/study-buddy-bot/preview.png',
-          thumbnail: '/images/projects/study-buddy-bot/preview.png',
-          description: "some description example"
-        },
-        {
-          original: '/images/projects/money-splitter/Screenshot_20230508-143825.png',
-          thumbnail: '/images/projects/money-splitter/Screenshot_20230508-143825.png',
-        },
-        {
-          original: 'https://picsum.photos/id/1019/1000/600/',
-          thumbnail: 'https://picsum.photos/id/1019/250/150/',
-        },
-    ];
+    const mappedImages = images.map(img => {
+        if (typeof img === "string") {
+            return { original: img };
+        }
+        return img;
+    });
 
     function enterFullScreen() {
         imageGalleryRef.current?.fullScreen();
@@ -41,6 +33,7 @@ export default function ProjectCard(params: { project: Project, top?: boolean })
             // so next time user open gallery he is on the first image
             imageGalleryRef.current?.slideToIndex(0);
             document.documentElement.classList.remove('image-gallery-open');
+            imageGalleryWrapperRef.current?.querySelectorAll("video").forEach(video => video.pause());
         } else {
             document.documentElement.classList.add('image-gallery-open');
         }
@@ -77,9 +70,9 @@ export default function ProjectCard(params: { project: Project, top?: boolean })
                 </div>
             </div>
             {createPortal(
-                (<div className={isFullScreen ? "fullScreen" : ""} onClick={imageGalleryClickHandler}>
+                (<div className={isFullScreen ? "fullScreen" : ""} onClick={imageGalleryClickHandler} ref={imageGalleryWrapperRef}>
                     <ImageGallery 
-                        items={images2} 
+                        items={mappedImages} 
                         ref={imageGalleryRef} 
                         onScreenChange={fullScreenChangeHandler} 
                         showPlayButton={false}
