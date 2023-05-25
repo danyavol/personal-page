@@ -50,7 +50,18 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://mitso.netlify.app", label: "App" },
             ],
             previewImg: "/images/projects/study-buddy-web/preview.png",
-            images: []
+            images: [
+                "/images/projects/study-buddy-web/preview.png",
+                "/images/projects/study-buddy-web/screenshot1.png",
+                "/images/projects/study-buddy-web/screenshot2.png",
+                "/images/projects/study-buddy-web/screenshot3.png",
+                "/images/projects/study-buddy-web/screenshot4.png",
+                "/images/projects/study-buddy-web/screenshot5.png",
+                "/images/projects/study-buddy-web/screenshot6.png",
+                "/images/projects/study-buddy-web/screenshot7.png",
+                "/images/projects/study-buddy-web/screenshot8.png",
+                "/images/projects/study-buddy-web/screenshot9.png",
+            ]
         },
         { 
             title: "Money Splitter",
@@ -61,7 +72,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://play.google.com/store/apps/details?id=danyavol.moneysplitter", label: "Google Play" },
             ],
             previewImg: "/images/projects/money-splitter/preview.png",
-            images: []
+            images: [
+                "/images/projects/money-splitter/preview.png",
+            ]
         },
     ],
     webApps: [
@@ -73,7 +86,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/equipment-service-system", label: "Source Code" },
             ],
             previewImg: "/images/projects/equipment-service/preview.png",
-            images: []
+            images: [
+                "/images/projects/equipment-service/preview.png"
+            ]
         },
         { 
             title: 'Web Messenger "Жывеграм"',
@@ -83,7 +98,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/web-chat-server", label: "Source Code" },
             ],
             previewImg: "/images/projects/web-chat/preview.png",
-            images: []
+            images: [
+                "/images/projects/web-chat/preview.png"
+            ]
         },
         { 
             title: "Cozy Groups",
@@ -93,7 +110,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/cozy-groups", label: "Source Code" },
             ],
             previewImg: "/images/projects/cozy-groups/preview.png",
-            images: []
+            images: [
+                "/images/projects/cozy-groups/preview.png"
+            ]
         },
         { 
             title: "Job Search App",
@@ -103,7 +122,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/job-search-app", label: "Source Code" },
             ],
             previewImg: "/images/projects/job-search-app/preview.png",
-            images: []
+            images: [
+                "/images/projects/job-search-app/preview.png"
+            ]
         },
         { 
             title: "Pizza App",
@@ -113,7 +134,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/react-pizza", label: "Source Code" },
             ],
             previewImg: "/images/projects/pizza-app/preview.png",
-            images: []
+            images: [
+                "/images/projects/pizza-app/preview.png"
+            ]
         },
     ],
     webGames: [
@@ -126,7 +149,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://2d-platformer.danyavol.dev", label: "Try it!" },
             ],
             previewImg: "/images/projects/2d-platformer/preview.png",
-            images: []
+            images: [
+                "/images/projects/2d-platformer/preview.png"
+            ]
         },
         { 
             title: "Tetris",
@@ -137,7 +162,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://tetris.danyavol.dev", label: "Play it!" },
             ],
             previewImg: "/images/projects/tetris/preview.png",
-            images: []
+            images: [
+                "/images/projects/tetris/preview.png"
+            ]
         },
         { 
             title: "Sea Battle",
@@ -148,7 +175,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://sea-battle.danyavol.dev", label: "Play it!" },
             ],
             previewImg: "/images/projects/sea-battle/preview.png",
-            images: []
+            images: [
+                "/images/projects/sea-battle/preview.png"
+            ]
         },
         { 
             title: "Ping-Pong",
@@ -159,7 +188,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://ping-pong.danyavol.dev", label: "Play it!" },
             ],
             previewImg: "/images/projects/ping-pong/preview.png",
-            images: []
+            images: [
+                "/images/projects/ping-pong/preview.png"
+            ]
         },
     ],
     other: [
@@ -172,7 +203,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://t.me/carsTrackerBot", label: "Telegram Bot" },
             ],
             previewImg: "/images/projects/car-tracker/preview.png",
-            images: []
+            images: [
+                "/images/projects/car-tracker/preview.png"
+            ]
         },
         { 
             title: "Salary Calculator",
@@ -182,7 +215,9 @@ export const projects: {[category: string]: Project[]} = {
                 { url: "https://github.com/danyavol/salary_calculator", label: "Source Code" },
             ],
             previewImg: "/images/projects/salary-calc/preview.png",
-            images: []
+            images: [
+                "/images/projects/salary-calc/preview.png"
+            ]
         },
     ]
 };
