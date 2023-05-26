@@ -1,0 +1,27 @@
+.contactsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contactLink {
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 500;
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    &:hover {
+        color: var(--md-sys-color-primary);
+
+        svg, path {
+            fill: var(--md-sys-color-primary);
+        }
+    }
+}

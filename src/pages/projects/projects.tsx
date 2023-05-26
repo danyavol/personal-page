@@ -1,13 +1,15 @@
 import { projects } from "@/constants/projects-list";
-import ProjectCard from "../../components/project-card/project-card";
 import styles from "./projects.module.scss";
+import dynamic from "next/dynamic";
+
+const ProjectCard = dynamic(() => import("../../components/project-card/project-card"), { ssr: false });
 
 export default function Projects() {
     return (
-        <section id="projects">
+        <section>
             <img src="/images/curve-line.svg" className="section-separator" />
 
-            <h2 className="section-title">Projects</h2>
+            <h2 className="section-title">Personal Projects</h2>
 
             <h3 className={styles.subsection}>TOP Projects</h3>
             <div className={styles.projects}>
@@ -22,7 +24,7 @@ export default function Projects() {
                     projects.webApps.map((p, index) => <ProjectCard project={p} key={index} />)
                 }
             </div>
-            
+
             <h3 className={styles.subsection}>Web Games</h3>
             <div className={styles.projects}>
                 {

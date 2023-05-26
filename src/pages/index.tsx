@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from './header/header'
-import About from './about/about'
-import Contact from './contact/contact'
-import dynamic from 'next/dynamic'
+import Projects from './projects/projects';
 
 const inter = Inter({ subsets: ['latin'] });
-
-const DynamicProjects = dynamic(() => import('../components/projects/projects'), { ssr: false });
 
 export default function Home() {
     return (
@@ -21,11 +17,7 @@ export default function Home() {
             <div className={inter.className}>
                 <main>
                     <Header />
-
-                    <h3 style={{ color: "red", textAlign: "center" }}>Site is in progress... Will be available soon</h3>
-                    {/* <About /> */}
-                    <DynamicProjects />
-                    {/* <Contact /> */}
+                    <Projects />
                 </main>
                 <div className="page-background"></div>
                 <div id="overlay"></div>
