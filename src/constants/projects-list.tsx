@@ -161,7 +161,10 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/job-search-app/preview.png",
             images: [
-                "/images/projects/job-search-app/preview.png"
+                "/images/projects/job-search-app/preview.png",
+                "/images/projects/job-search-app/screenshot1.png",
+                "/images/projects/job-search-app/screenshot2.png",
+                "/images/projects/job-search-app/screenshot3.png"
             ]
         },
         { 
@@ -173,7 +176,11 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/pizza-app/preview.png",
             images: [
-                "/images/projects/pizza-app/preview.png"
+                "/images/projects/pizza-app/preview.png",
+                "/images/projects/pizza-app/screenshot1.png",
+                "/images/projects/pizza-app/screenshot2.png",
+                "/images/projects/pizza-app/screenshot3.png",
+                "/images/projects/pizza-app/screenshot4.png"
             ]
         },
     ],
@@ -217,7 +224,8 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/sea-battle/preview.png",
             images: [
-                "/images/projects/sea-battle/preview.png"
+                "/images/projects/sea-battle/preview.png",
+                "/images/projects/sea-battle/screenshot1.png"
             ]
         },
         { 
@@ -230,7 +238,8 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/ping-pong/preview.png",
             images: [
-                "/images/projects/ping-pong/preview.png"
+                "/images/projects/ping-pong/preview.png",
+                "/images/projects/ping-pong/screenshot1.jpg",
             ]
         },
     ],

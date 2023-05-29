@@ -39,22 +39,21 @@
 }
     
 .image-gallery-slides {
-    height: 100%;
     position: relative;
 }
-    
-.image-gallery-swipe {
+
+.image-gallery-swipe, .image-gallery-slides {
     height: calc(100vh - 78px);
 }
 
 @media (max-width: 768px) {
-    .image-gallery-swipe {
+    .image-gallery-swipe, .image-gallery-slides {
         height: calc(100vh - 64px);
     }
 }
 
 @media (max-width: 480px) {
-    .image-gallery-swipe {
+    .image-gallery-swipe, .image-gallery-slides {
         height: calc(100vh - 46px);
     }
 }
