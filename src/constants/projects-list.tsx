@@ -104,7 +104,19 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/equipment-service/preview.png",
             images: [
-                "/images/projects/equipment-service/preview.png"
+                "/images/projects/equipment-service/preview.png",
+                "/images/projects/equipment-service/screenshot1.png",
+                "/images/projects/equipment-service/screenshot2.png",
+                "/images/projects/equipment-service/screenshot3.png",
+                "/images/projects/equipment-service/screenshot4.png",
+                "/images/projects/equipment-service/screenshot5.png",
+                "/images/projects/equipment-service/screenshot6.png",
+                "/images/projects/equipment-service/screenshot7.png",
+                "/images/projects/equipment-service/screenshot8.png",
+                "/images/projects/equipment-service/screenshot9.png",
+                "/images/projects/equipment-service/screenshot10.jpg",
+                "/images/projects/equipment-service/screenshot11.jpg",
+                "/images/projects/equipment-service/screenshot12.jpg",
             ]
         },
         { 
@@ -128,7 +140,11 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/cozy-groups/preview.png",
             images: [
-                "/images/projects/cozy-groups/preview.png"
+                "/images/projects/cozy-groups/preview.png",
+                "/images/projects/cozy-groups/screenshot1.jpg",
+                "/images/projects/cozy-groups/screenshot2.jpg",
+                "/images/projects/cozy-groups/screenshot3.jpg",
+                "/images/projects/cozy-groups/screenshot4.jpg",
             ]
         },
         { 
@@ -167,7 +183,8 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/2d-platformer/preview.png",
             images: [
-                "/images/projects/2d-platformer/preview.png"
+                "/images/projects/2d-platformer/preview.png",
+                "/images/projects/2d-platformer/screenshot1.jpg",
             ]
         },
         { 
@@ -180,7 +197,9 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/tetris/preview.png",
             images: [
-                "/images/projects/tetris/preview.png"
+                "/images/projects/tetris/preview.png",
+                "/images/projects/tetris/screenshot1.jpg",
+                "/images/projects/tetris/screenshot2.png",
             ]
         },
         { 
