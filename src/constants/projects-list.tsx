@@ -128,7 +128,12 @@ export const projects: {[category: string]: Project[]} = {
             ],
             previewImg: "/images/projects/web-chat/preview.png",
             images: [
-                "/images/projects/web-chat/preview.png"
+                "/images/projects/web-chat/preview.png",
+                "/images/projects/web-chat/screenshot1.png",
+                "/images/projects/web-chat/screenshot2.png",
+                "/images/projects/web-chat/screenshot3.png",
+                "/images/projects/web-chat/screenshot4.png",
+                "/images/projects/web-chat/screenshot5.png",
             ]
         },
         { 
