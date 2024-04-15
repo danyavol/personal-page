@@ -17,7 +17,7 @@ export default function Header() {
                 <Contact />
 
                 <div className={styles.downloadWrapper}>
-                    <a className={styles.downloadResume} href="/Resume-Volosyuk_05-04-2024.pdf" download>Download Resume</a>
+                    <a className={styles.downloadResume} href="/Resume-Volosyuk_2024-04-15.pdf" download>Download Resume</a>
                 </div>
             </div>
             <div className={styles.photoWrapper}>
