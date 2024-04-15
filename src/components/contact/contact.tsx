@@ -8,9 +8,9 @@ export default function Contact() {
     return (
         <ul className={styles.contactsList}>
             <li>
-                <a className={styles.contactLink} href="mailto:daniil.volosyuk@gmail.com" target="_blank">
+                <a className={styles.contactLink} href="mailto:danyavol.dev@gmail.com" target="_blank">
                     <MailIcon />
-                    daniil.volosyuk@gmail.com
+                    danyavol.dev@gmail.com
                 </a>
             </li>
             <li>
